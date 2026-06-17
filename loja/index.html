@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Casa Terra — Decoração para o seu lar</title>
+<meta name="description" content="Vasos de cerâmica, velas aromáticas, difusores, almofadas e espelhos. Decoração minimalista para deixar sua casa aconchegante." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">Casa Terra<span>.</span></a>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn" aria-label="Abrir carrinho">
+      Carrinho <span class="badge" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="eyebrow">Nova coleção</span>
+      <h1>Aconchego em <em>cada detalhe</em> da sua casa.</h1>
+      <p>Cerâmicas, velas e peças únicas que transformam o seu lar em um refúgio.</p>
+      <a href="#produtos" class="btn-primary">Ver produtos</a>
+    </div>
+    <div class="hero-image">
+      <img src="../images/hero.jpg" alt="Sala de estar minimalista com vasos e velas" />
+    </div>
+  </div>
+</section>
+
+<section id="produtos" class="products">
+  <div class="container">
+    <h2>Nossos produtos</h2>
+    <p class="section-sub">Curadoria de peças de decoração em tons neutros e materiais nobres.</p>
+    <div class="filters">
+      <button class="chip active" data-filter="all">Todos</button>
+      <button class="chip" data-filter="ceramica">Cerâmicas</button>
+      <button class="chip" data-filter="aroma">Aromas</button>
+      <button class="chip" data-filter="textil">Têxtil & Parede</button>
+      <button class="chip" data-filter="moda">Moda</button>
+      <button class="chip" data-filter="joias">Joias</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="sobre" class="about">
+  <div class="container about-inner">
+    <h2>Decoração que conta histórias</h2>
+    <p>A Casa Terra nasceu da paixão por ambientes acolhedores. Selecionamos cerâmicas artesanais, velas de cera de soja, difusores e peças têxteis para trazer calma e personalidade para o seu lar.</p>
+  </div>
+</section>
+
+<footer id="contato">
+  <div class="container footer-inner">
+    <div>
+      <p class="logo">Casa Terra<span>.</span></p>
+      <p class="muted">CNPJ 00.000.000/0001-00 · Atendimento: contato@casaterra.com.br</p>
+    </div>
+    <p class="muted">© 2026 Casa Terra. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <h3>Seu carrinho</h3>
+    <button id="closeDrawer" aria-label="Fechar">×</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot">
+    <div class="total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+    <button class="btn-primary full" id="checkoutBtn">Finalizar pedido</button>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
